@@ -451,7 +451,7 @@
         "type": "t_address"
       },
       {
-        "astId": 2887,
+        "astId": 2880,
         "contract": "contracts/QUAI_staking.sol:QUAI_Staking",
         "label": "stakingEnd",
         "offset": 0,
@@ -459,7 +459,7 @@
         "type": "t_uint256"
       },
       {
-        "astId": 2890,
+        "astId": 2883,
         "contract": "contracts/QUAI_staking.sol:QUAI_Staking",
         "label": "rewardRate",
         "offset": 0,
@@ -467,7 +467,7 @@
         "type": "t_uint256"
       },
       {
-        "astId": 2892,
+        "astId": 2885,
         "contract": "contracts/QUAI_staking.sol:QUAI_Staking",
         "label": "totalStaked",
         "offset": 0,
@@ -475,7 +475,7 @@
         "type": "t_uint256"
       },
       {
-        "astId": 2895,
+        "astId": 2888,
         "contract": "contracts/QUAI_staking.sol:QUAI_Staking",
         "label": "maxTotalStaked",
         "offset": 0,
@@ -483,7 +483,7 @@
         "type": "t_uint256"
       },
       {
-        "astId": 2898,
+        "astId": 2891,
         "contract": "contracts/QUAI_staking.sol:QUAI_Staking",
         "label": "minStaked",
         "offset": 0,
@@ -491,7 +491,7 @@
         "type": "t_uint256"
       },
       {
-        "astId": 2902,
+        "astId": 2895,
         "contract": "contracts/QUAI_staking.sol:QUAI_Staking",
         "label": "stakedTokens",
         "offset": 0,
@@ -499,7 +499,7 @@
         "type": "t_mapping(t_address,t_uint256)"
       },
       {
-        "astId": 2906,
+        "astId": 2899,
         "contract": "contracts/QUAI_staking.sol:QUAI_Staking",
         "label": "lastStaked",
         "offset": 0,
@@ -507,7 +507,7 @@
         "type": "t_mapping(t_address,t_uint256)"
       },
       {
-        "astId": 2910,
+        "astId": 2903,
         "contract": "contracts/QUAI_staking.sol:QUAI_Staking",
         "label": "totalEarnedTokens",
         "offset": 0,

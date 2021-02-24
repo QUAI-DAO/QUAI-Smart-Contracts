@@ -406,7 +406,7 @@
         "type": "t_address"
       },
       {
-        "astId": 4390,
+        "astId": 4383,
         "contract": "contracts/waterfall_presale+staking.sol:QUAIDAO_Staking",
         "label": "quaiToken",
         "offset": 0,
@@ -414,7 +414,7 @@
         "type": "t_address"
       },
       {
-        "astId": 4392,
+        "astId": 4385,
         "contract": "contracts/waterfall_presale+staking.sol:QUAIDAO_Staking",
         "label": "stakingEnd",
         "offset": 0,
@@ -422,7 +422,7 @@
         "type": "t_uint256"
       },
       {
-        "astId": 4403,
+        "astId": 4396,
         "contract": "contracts/waterfall_presale+staking.sol:QUAIDAO_Staking",
         "label": "totalStaked",
         "offset": 0,
@@ -430,7 +430,7 @@
         "type": "t_uint256"
       },
       {
-        "astId": 4406,
+        "astId": 4399,
         "contract": "contracts/waterfall_presale+staking.sol:QUAIDAO_Staking",
         "label": "minStaked",
         "offset": 0,
@@ -438,7 +438,7 @@
         "type": "t_uint256"
       },
       {
-        "astId": 4410,
+        "astId": 4403,
         "contract": "contracts/waterfall_presale+staking.sol:QUAIDAO_Staking",
         "label": "stakedTokens",
         "offset": 0,
@@ -446,7 +446,7 @@
         "type": "t_mapping(t_address,t_uint256)"
       },
       {
-        "astId": 4414,
+        "astId": 4407,
         "contract": "contracts/waterfall_presale+staking.sol:QUAIDAO_Staking",
         "label": "lastStaked",
         "offset": 0,
@@ -454,7 +454,7 @@
         "type": "t_mapping(t_address,t_uint256)"
       },
       {
-        "astId": 4418,
+        "astId": 4411,
         "contract": "contracts/waterfall_presale+staking.sol:QUAIDAO_Staking",
         "label": "totalEarnedTokens",
         "offset": 0,
