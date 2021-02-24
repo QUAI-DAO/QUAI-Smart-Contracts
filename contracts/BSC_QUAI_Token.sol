@@ -119,7 +119,7 @@ contract QUAI is Context, IBEP20, Ownable {
      * @dev Set the tax rate
      */
     function setTaxRate(uint8 newTaxRate) external onlyOwner returns (bool) {
-        require(newTaxRate < 1000, "Tax rate must be less than 1000");
+        require(newTaxRate < 250, "Tax rate must be less than 250");
         _taxRate = newTaxRate;
         return true;
     }
