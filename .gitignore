@@ -5,6 +5,7 @@ contracts.json
 coverage*
 **/solcInputs
 deployments/localhost
+deployments/bsc_testnet
 dist
 node_modules
 src/types

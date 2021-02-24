@@ -2,12 +2,14 @@ import { HardhatUserConfig } from "hardhat/config";
 import { HttpNetworkUserConfig } from "hardhat/types";
 
 import "@nomiclabs/hardhat-ethers";
+import "@nomiclabs/hardhat-etherscan";
 import "@nomiclabs/hardhat-waffle";
 import "hardhat-typechain";
 import "hardhat-deploy";
 
 // read MNEMONIC from file or from env variable
 let mnemonic = process.env.MNEMONIC;
+let scanApiKey = process.env.API_KEY;
 
 const infuraNetwork = (
     network: string,
@@ -49,6 +51,9 @@ const config: HardhatUserConfig = {
             accounts: mnemonic ? { mnemonic } : undefined,
         },
     },
+    etherscan: {
+        apiKey: scanApiKey,
+    },
     solidity: {
         compilers: [
             {
@@ -79,6 +84,11 @@ const config: HardhatUserConfig = {
     typechain: {
         outDir: "src/types",
         target: "ethers-v5",
+    },
+    namedAccounts: {
+        deployer: {
+            default: 0,
+        },
     },
 };
 

@@ -6,7 +6,7 @@ const func: DeployFunction = async (hre: HardhatRuntimeEnvironment) => {
     const { deploy } = deployments;
     const { deployer } = await getNamedAccounts();
 
-    await deploy("BSC_QUAI_Token", {
+    await deploy("QUAI", {
         from: deployer,
         log: true,
         skipIfAlreadyDeployed: true,
