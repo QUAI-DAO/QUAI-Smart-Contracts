@@ -15,6 +15,7 @@
     "deploy:mainnet": "hardhat deploy --network mainnet --export export/abi/mainnet.json",
     "deploy:matic_testnet": "hardhat deploy --network matic_testnet --export export/abi/matic_testnet.json",
     "deploy:bsc_testnet": "hardhat deploy --network bsc_testnet --export export/abi/bsc_testnet.json",
+    "deploy:bsc": "hardhat deploy --network bsc --export export/abi/bsc.json",
     "export": "hardhat export-artifacts export/artifacts",
     "info": "npm-scripts-info",
     "prepack": "run-s clean prepare",
