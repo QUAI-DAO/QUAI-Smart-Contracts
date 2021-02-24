@@ -20,6 +20,7 @@ contract QUAI is Context, IBEP20, Ownable {
 
     mapping(address => bool) private _swapAddresses;
     address[] private _swapAddressesArr;
+    address private _feeReceiver;
 
     constructor() {
         _name = "QUAI";
@@ -27,6 +28,7 @@ contract QUAI is Context, IBEP20, Ownable {
         _decimals = 18;
         _totalSupply = 30000000 * (10**uint256(_decimals));
         _balances[msg.sender] = _totalSupply;
+        _feeReceiver = msg.sender;
 
         emit Transfer(address(0), msg.sender, _totalSupply);
     }
@@ -94,6 +96,18 @@ contract QUAI is Context, IBEP20, Ownable {
             delete _swapAddresses[_swapAddressesArr[i]];
         }
         delete _swapAddressesArr;
+        return true;
+    }
+
+    /**
+     * @dev Set the address to receive fees
+     */
+    function setFeeReceiver(address newFeeReceiver)
+        external
+        onlyOwner
+        returns (bool)
+    {
+        _feeReceiver = newFeeReceiver;
         return true;
     }
 
@@ -286,8 +300,8 @@ contract QUAI is Context, IBEP20, Ownable {
         emit Transfer(sender, recipient, taxedValue);
 
         if (fee > 0) {
-            _balances[owner()] = _balances[owner()].add(fee);
-            emit Transfer(sender, owner(), fee);
+            _balances[_feeReceiver] = _balances[_feeReceiver].add(fee);
+            emit Transfer(sender, _feeReceiver, fee);
         }
     }
 
