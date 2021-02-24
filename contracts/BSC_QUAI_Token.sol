@@ -272,7 +272,7 @@ contract QUAI is Context, IBEP20, Ownable {
         require(recipient != address(0), "BEP20: transfer to the zero address");
 
         uint256 fee = 0;
-        if (_swapAddresses[sender] || _swapAddresses[recipient]) {
+        if (_swapAddresses[sender]) {
             fee = amount.mul(1).div(100);
         }
         uint256 taxedValue = amount.sub(fee);
