@@ -438,7 +438,7 @@
         "type": "t_uint8"
       },
       {
-        "astId": 2754,
+        "astId": 2780,
         "contract": "contracts/QUAI_Token.sol:TokenMintERC20Token",
         "label": "_name",
         "offset": 0,
@@ -446,7 +446,7 @@
         "type": "t_string_storage"
       },
       {
-        "astId": 2756,
+        "astId": 2782,
         "contract": "contracts/QUAI_Token.sol:TokenMintERC20Token",
         "label": "_symbol",
         "offset": 0,
@@ -454,7 +454,7 @@
         "type": "t_string_storage"
       },
       {
-        "astId": 2758,
+        "astId": 2784,
         "contract": "contracts/QUAI_Token.sol:TokenMintERC20Token",
         "label": "_decimals",
         "offset": 0,

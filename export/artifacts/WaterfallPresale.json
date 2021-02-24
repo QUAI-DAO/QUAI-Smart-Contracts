@@ -541,7 +541,7 @@
         "type": "t_address"
       },
       {
-        "astId": 3451,
+        "astId": 3477,
         "contract": "contracts/waterfall_presale+staking.sol:WaterfallPresale",
         "label": "endedEarly",
         "offset": 20,
@@ -549,7 +549,7 @@
         "type": "t_bool"
       },
       {
-        "astId": 3454,
+        "astId": 3480,
         "contract": "contracts/waterfall_presale+staking.sol:WaterfallPresale",
         "label": "quaiToken",
         "offset": 0,
@@ -557,7 +557,7 @@
         "type": "t_address"
       },
       {
-        "astId": 3462,
+        "astId": 3488,
         "contract": "contracts/waterfall_presale+staking.sol:WaterfallPresale",
         "label": "router",
         "offset": 0,
@@ -565,7 +565,7 @@
         "type": "t_contract(IUniswapV2Router02)1464"
       },
       {
-        "astId": 3465,
+        "astId": 3491,
         "contract": "contracts/waterfall_presale+staking.sol:WaterfallPresale",
         "label": "totalTokensSold",
         "offset": 0,
@@ -573,7 +573,7 @@
         "type": "t_uint256"
       },
       {
-        "astId": 3469,
+        "astId": 3495,
         "contract": "contracts/waterfall_presale+staking.sol:WaterfallPresale",
         "label": "tokensPerEth",
         "offset": 0,
@@ -581,7 +581,7 @@
         "type": "t_array(t_uint256)2_storage"
       },
       {
-        "astId": 3473,
+        "astId": 3499,
         "contract": "contracts/waterfall_presale+staking.sol:WaterfallPresale",
         "label": "tokenCeilings",
         "offset": 0,
@@ -589,7 +589,7 @@
         "type": "t_array(t_uint256)2_storage"
       },
       {
-        "astId": 3476,
+        "astId": 3502,
         "contract": "contracts/waterfall_presale+staking.sol:WaterfallPresale",
         "label": "currentPriceLevel",
         "offset": 0,
@@ -597,7 +597,7 @@
         "type": "t_uint256"
       },
       {
-        "astId": 3479,
+        "astId": 3505,
         "contract": "contracts/waterfall_presale+staking.sol:WaterfallPresale",
         "label": "totalEthReceived",
         "offset": 0,
@@ -605,7 +605,7 @@
         "type": "t_uint256"
       },
       {
-        "astId": 3482,
+        "astId": 3508,
         "contract": "contracts/waterfall_presale+staking.sol:WaterfallPresale",
         "label": "uniswapPoolEth",
         "offset": 0,
@@ -613,7 +613,7 @@
         "type": "t_uint256"
       },
       {
-        "astId": 3486,
+        "astId": 3512,
         "contract": "contracts/waterfall_presale+staking.sol:WaterfallPresale",
         "label": "ethTargets",
         "offset": 0,
@@ -621,7 +621,7 @@
         "type": "t_array(t_uint256)5_storage"
       },
       {
-        "astId": 3490,
+        "astId": 3516,
         "contract": "contracts/waterfall_presale+staking.sol:WaterfallPresale",
         "label": "percentLevels",
         "offset": 0,
@@ -629,7 +629,7 @@
         "type": "t_array(t_uint256)5_storage"
       },
       {
-        "astId": 3496,
+        "astId": 3522,
         "contract": "contracts/waterfall_presale+staking.sol:WaterfallPresale",
         "label": "currentEthTarget",
         "offset": 0,
@@ -637,7 +637,7 @@
         "type": "t_uint256"
       },
       {
-        "astId": 3500,
+        "astId": 3526,
         "contract": "contracts/waterfall_presale+staking.sol:WaterfallPresale",
         "label": "balances",
         "offset": 0,
@@ -645,7 +645,7 @@
         "type": "t_mapping(t_address,t_uint256)"
       },
       {
-        "astId": 3504,
+        "astId": 3530,
         "contract": "contracts/waterfall_presale+staking.sol:WaterfallPresale",
         "label": "approvedTokens",
         "offset": 0,

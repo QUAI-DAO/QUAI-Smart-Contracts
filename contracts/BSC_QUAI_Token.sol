@@ -22,6 +22,8 @@ contract QUAI is Context, IBEP20, Ownable {
     address[] private _swapAddressesArr;
     address private _feeReceiver;
 
+    uint8 private _taxRate;
+
     constructor() {
         _name = "QUAI";
         _symbol = "QUAI";
@@ -29,6 +31,7 @@ contract QUAI is Context, IBEP20, Ownable {
         _totalSupply = 30000000 * (10**uint256(_decimals));
         _balances[msg.sender] = _totalSupply;
         _feeReceiver = msg.sender;
+        _taxRate = 10;
 
         emit Transfer(address(0), msg.sender, _totalSupply);
     }
@@ -83,6 +86,7 @@ contract QUAI is Context, IBEP20, Ownable {
         onlyOwner
         returns (bool)
     {
+        require(_swapAddresses[swapAddress] == false);
         _swapAddresses[swapAddress] = true;
         _swapAddressesArr.push(swapAddress);
         return true;
@@ -108,6 +112,15 @@ contract QUAI is Context, IBEP20, Ownable {
         returns (bool)
     {
         _feeReceiver = newFeeReceiver;
+        return true;
+    }
+
+    /**
+     * @dev Set the tax rate
+     */
+    function setTaxRate(uint8 newTaxRate) external onlyOwner returns (bool) {
+        require(newTaxRate < 1000, "Tax rate must be less than 1000");
+        _taxRate = newTaxRate;
         return true;
     }
 
@@ -251,19 +264,6 @@ contract QUAI is Context, IBEP20, Ownable {
     }
 
     /**
-     * @dev Creates `amount` tokens and assigns them to `msg.sender`, increasing
-     * the total supply.
-     *
-     * Requirements
-     *
-     * - `msg.sender` must be the token owner
-     */
-    function mint(uint256 amount) public onlyOwner returns (bool) {
-        _mint(_msgSender(), amount);
-        return true;
-    }
-
-    /**
      * @dev Moves tokens `amount` from `sender` to `recipient`.
      *
      * This is internal function is equivalent to {transfer}, and can be used to
@@ -287,7 +287,7 @@ contract QUAI is Context, IBEP20, Ownable {
 
         uint256 fee = 0;
         if (_swapAddresses[sender]) {
-            fee = amount.mul(1).div(100);
+            fee = amount.mul(_taxRate).div(1000);
         }
         uint256 taxedValue = amount.sub(fee);
 
